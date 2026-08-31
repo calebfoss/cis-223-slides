@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>CIS 223 - JavaScript - Week 2 - Functions</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <script src="evaluator-element.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Comments</h2>
+          <p class="fragment">Ignored by device</p>
+          <pre>
+          <code class="fragment language-js">
+// Single line comment
+          
+/* Multi line
+   comment */
+          </code>
+          </pre>
+        </section>
+        <section>
+          <section><h2>Functions</h2></section>
+          <section>
+            <h3>Calling</h3>
+            <p>Send a message by <em>passing arguments</em>.</p>
+            <pre><code class="language-js">
+// functionName written in camelCase
+functionName(argument1, argument2);
+          </code></pre>
+            <p class="fragment">
+              Method - function that belongs to an object (which we'll discuss
+              later)
+            </p>
+            <p class="fragment">Try it with the alert() function.</p>
+          </section>
+          <section>
+            <h3>Defining</h3>
+            <p>Instructions for how to respond to a message.</p>
+            <p>function is a keyword</p>
+            <p>
+              Block - section of code denoted by { } (curly brackets / braces)
+            </p>
+            <pre><code class="language-js">
+function functionName(parameter1, parameter2) {
+  // Code that executes the function
+}
+</code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>Exercise - Grocery App</h2>
+          <p>
+            You are developing an app for a grocery store. Your tasks is to
+            calculate sale prices. Write a function that takes in a price (ex:
+            1.5 for $1.50) and a discount amount (ex: 0.5 for 50%) and returns
+            the resulting sale price (ex: $0.75).
+          </p>
+        </section>
+        <section>
+          <h2>Exercise - Web Page Table</h2>
+          <p>You are generating a table with alternating row colors.</p>
+          <img src="img/table.png" />
+          <p>
+            Write a function that takes in a row number, checks whether that
+            number is even, and returns true (even) or false (odd).
+          </p>
+        </section>
+        <section>
+          <h2>Exercise - Social Media App</h2>
+          <p>
+            Prompt the user to enter their name. When they enter it, send an
+            alert that greets them "Hello, [their name]!"
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        width: 1080,
+        height: 720,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        pdfSeparateFragments: false,
+      });
+    </script>
+  </body>
+</html>
