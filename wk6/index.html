@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>CIS 223 - JavaScript - Week 6</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <script src="evaluator-element.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Iteration</h2>
+          <p>Repetition + change</p>
+        </section>
+        <section>
+          <h2>Danger!</h2>
+          <p>
+            Mistakes when setting up a loop can result in infinite repetition,
+            causing the program to get stuck forever. Save your work before
+            creating a loop!
+          </p>
+        </section>
+        <section>
+          <h2>Iteration Ingredients</h2>
+          <ol>
+            <li class="fragment">
+              initialization - create a variable to keep track of change
+            </li>
+            <li class="fragment">
+              test - condition that will be true until it's time to stop
+              repeating
+            </li>
+            <li class="fragment">
+              update - change made every time the code repeats, typically
+              assigning a new value to the initialized variable3
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2>while</h2>
+          <pre><code class="language-js">
+// Initialization
+let count = 0;
+
+// Test
+while(count &lt; 100) {
+  console.log(count);
+
+  // Update
+  count++;
+}
+          </code></pre>
+        </section>
+        <section>
+          <h2>for</h2>
+          <pre><code class="language-js">
+            // Initialization; Test; Update
+            for(let count = 0; count &lt; 100; count++) {
+              console.log(count);
+            }
+                      </code></pre>
+        </section>
+        <section>
+          <img src="concentric.png">
+        </section>
+        <section>
+          <img src="circlePattern.png">
+        </section>
+        <section>
+          <img src="spiral.png">
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        pdfSeparateFragments: false,
+      });
+    </script>
+  </body>
+</html>
