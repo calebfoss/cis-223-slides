@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>CIS 223 - JavaScript - Week 4</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <script src="evaluator-element.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Classes and Objects</h2>
+          <figure>
+            <img src="amongUs.png" alt="Cookie cutters and cookies" />
+            <figcaption>
+              A class is like a cookie cutter. An object is like a cookie.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Terms</h2>
+          <ul>
+            <li class="fragment">
+              Class - defines a template for a type of thing, like a cookie
+              cutter
+            </li>
+            <li class="fragment">
+              Object - individual instance of a class, like a cookie
+            </li>
+            <li class="fragment">
+              Property - variable that is specific to an object, a way to
+              customize, like cookie decorations
+            </li>
+            <li class="fragment">
+              Method - function that is specific to an object, something an
+              object can do, like bake
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>More Terms</h2>
+          <ul>
+            <li class="fragment">
+              constructor - special method that is called when an object is
+              created, typically properties are initialized here, like cutting
+              and decorating a cookie
+            </li>
+            <li class="fragment">
+              this - special keyword for referencing the individual object, like
+              “I’m going to decorate this cookie with sprinkles”
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Example class: Cat</h2>
+          <!-- <img style="float: right" src="cat.png" alt="A cat" /> -->
+          <ul>
+            <li>
+              Properties:
+              <ul>
+                <li class="fragment">Name</li>
+                <li class="fragment">Age</li>
+                <li class="fragment">Fur colors</li>
+              </ul>
+            </li>
+            <li>
+              Methods:
+              <ul>
+                <li class="fragment">Eat</li>
+                <li class="fragment">Play</li>
+                <li class="fragment">Meow</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Example object: Cat</h2>
+          <img style="float: right" src="cat.png" alt="A cat" />
+          <ul>
+            <li>
+              Properties:
+              <ul>
+                <li class="fragment">Name: "Clover"</li>
+                <li class="fragment">Age: 5</li>
+                <li class="fragment">
+                  Fur colors:<br />["orange",<br />"black",<br />"white"]
+                </li>
+              </ul>
+            </li>
+            <li>
+              Methods:
+              <ul>
+                <li class="fragment">Eat</li>
+                <li class="fragment">Play</li>
+                <li class="fragment">Meow</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        pdfSeparateFragments: false,
+      });
+    </script>
+  </body>
+</html>
